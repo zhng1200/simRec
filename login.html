@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://127.0.0.1:5000/login -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+    		<link rel="shortcut icon" href="/static/img/title.png" type="image/x-icon">
+
+<link rel="shortcut icon" href="http://127.0.0.1:5000/static/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://127.0.0.1:5000/static/favicon.ico" type="image/x-icon">
+
+
+  </head>
+  <body>
+    
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                
+                
+                
+                
+                
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li><a href="/register">去注册</a></li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    
+<div class="container">
+    
+    
+<div class="page-header">
+    <h1 align="center">新闻推荐系统</h1>
+</div>
+    {% if nodata %}
+    <h5>对不起，没有权限查询</h5>
+    {% endif %}
+<div class="col-md-4">
+    
+<form action="/doLogin" method="post" class="form" role="form">
+  <input id="csrf_token" name="csrf_token" type="hidden" value="">
+  
+    
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="id">用户名</label>
+        
+          <input class="form-control" id="id" name="id" required="" type="text" value="">
+        
+  </div>
+
+
+    
+
+
+
+
+
+
+<div class="form-group  required"><label class="control-label" for="password2">密码</label>
+        
+          <input class="form-control" id="password2" name="password2" required="" type="password" value="">
+        
+  </div>
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    <input class="btn btn-default" id="submit" name="submit" type="submit" value="登录">
+  
+
+
+
+
+    
+
+</form>
+</div>
+
+</div>
+
+
+    
+
+    <script src="static/jquery.min.js"></script>
+    <script src="static/bootstrap.min.js"></script>
+
+  
+
+</body></html>

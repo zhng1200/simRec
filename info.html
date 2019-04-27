@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://127.0.0.1:5000/login -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+    		<link rel="shortcut icon" href="/static/img/title.png" type="image/x-icon">
+
+<link rel="shortcut icon" href="http://127.0.0.1:5000/static/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://127.0.0.1:5000/static/favicon.ico" type="image/x-icon">
+
+
+  </head>
+  <body>
+
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+
+
+
+
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>欢迎您</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="main" style="width:100%;">
+
+<div id="left" style="width:40%;float:left;">
+
+<p align='center'>
+
+<br>
+<br>
+用户历史浏览<br>
+记录喜好关键词Top 10<br>
+{% for i in keys %}
+    <p align="center">{{i}}</p>
+    {% endfor %}
+
+
+</p>
+
+
+</div>
+
+<div id="right" style="width:40%;float:left;">
+<a href='/'><h4 align="right">退出<h4></a><br>
+<p align='center'>
+
+推荐的新闻<br>
+{% for i in contents %}
+    <p align="left"><a href="/show?ids={{i.1}}">{{i.2}}</a></p>
+    {% endfor %}
+
+</div>
+
+</div>
+  </body>

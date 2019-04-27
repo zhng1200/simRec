@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎使用推荐系统，为您推荐</title>
+    <style>
+		div{
+		    width:1000px;
+		    height:500px;
+		    display: block;
+		    margin:0 auto;
+		}
+	</style>
+</head>
+<body >
+    <h1 align="center">欢迎使用推荐系统，为您推荐~详情</h1>
+    <br>
+    <h4 align="center"><a href="/loginX">返回</a></h4>
+
+<div align="center">
+{% for i in contents %}
+    <p align="left">{{i}}</p>
+    {% endfor %}
+</div>
+</body>
+</html>
